@@ -1,0 +1,9 @@
+- hosts: cod
+   
+  remote_user: root
+  become: yes
+  
+  tasks:
+   
+   - name: 251 t.sh
+     shell: date >>/home/data.log
